@@ -85,8 +85,15 @@ font-family: Lunacy, serif;
     position: absolute;
     width:47px;
     height:47px;
+    /* Change the width over 100ms */
+    transition: width 100ms ease-in-out, height 100ms ease-in-out;
 }
 
+/* The cobwebs grow when you hover a card. */
+.card-back:hover .cob-web {
+width: 47px;
+height: 52px;
+}
 .cob-web-top-left{
     transform: rotate(270deg);
     top: 0;
