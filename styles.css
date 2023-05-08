@@ -74,12 +74,30 @@ font-family: Lunacy, serif;
     border-style: solid;
 }
 
+.card.visible .card-back{
+transform: rotateY(-180deg); 
+}
+
+.card.visible .card-front{
+    transform: rotateY(0deg);
+}
 .card-back{
     background-color: black;
     border-color: #FF6D00;
 }
 .card-front {
-    transform: rotateX(180deg);
+    background-color:#FFBB89;
+    border-color: #333;
+    transform: rotateY(180deg);
+}
+
+.card-value{
+    transition: transform 100ms ease-in-out;
+    transform: scale(.9);
+}
+
+.card-front:hover .card-value{
+    transform: scale(1);
 }
 .cob-web{
     position: absolute;
@@ -90,7 +108,7 @@ font-family: Lunacy, serif;
 }
 
 /* The cobwebs grow when you hover a card. */
-.card-back:hover .cob-web {
+.card-face:hover .cob-web {
 width: 47px;
 height: 52px;
 }
