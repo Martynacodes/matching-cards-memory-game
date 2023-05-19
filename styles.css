@@ -9,15 +9,18 @@ html {
 
 body {
   margin: 0;
-  background: radial-gradient(#29b6f6, #039be5);
+  background-image: url("assets/images/mink-mingle-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-title {
-  color: #ff9770;
-  font-family: "Black And White Picture", sans-serif;
+  color: #00afb9;
   font-weight: normal;
   text-align: center;
   font-size: 6em;
+  font-family: "Black And White Picture", sans-serif;
 }
 
 .game-info-container {
@@ -27,9 +30,8 @@ body {
 }
 
 .game-info {
-  color: #ff70a6;
+  color: #f07167;
   font-size: 4em;
-  font-family: "Black And White Picture", sans-serif;
 }
 
 .game-container {
@@ -75,44 +77,9 @@ body {
 }
 
 .card-back {
-  background-color: #ffd679;
-  border-color: #ff9770;
+  background-color: #00afb9;
+  border-color: #00afb9;
   transform: rotateY(0);
-}
-
-.cob-web {
-  position: absolute;
-  transition: width 100ms ease-in-out, height 100ms ease-in-out;
-  width: 47px;
-  height: 47px;
-}
-
-.card-face:hover .cob-web {
-  width: 52px;
-  height: 52px;
-}
-
-.cob-web-top-left {
-  transform: rotate(270deg);
-  top: 0;
-  left: 0;
-}
-
-.cob-web-top-right {
-  top: 0;
-  right: 0;
-}
-
-.cob-web-bottom-left {
-  transform: rotate(180deg);
-  bottom: 0;
-  left: 0;
-}
-
-.cob-web-bottom-right {
-  transform: rotate(90deg);
-  bottom: 0;
-  right: 0;
 }
 
 .spider {
@@ -136,8 +103,8 @@ body {
 }
 
 .card-front {
-  background-color: #70d6ff;
-  border-color: #ff9770;
+  background-color: #ffbb89;
+  border-color: #333;
   transform: rotateY(180deg);
 }
 
@@ -152,8 +119,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #ff70a6;
+  color: #0081a7;
   font-family: "Black And White Picture", sans-serif;
+
   transition: background-color 500ms, font-size 500ms;
 }
 
@@ -198,106 +166,5 @@ body {
   .game-info-container {
     flex-direction: column;
     align-items: center;
-  }
-}
-.bubbles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-}
-.bubble {
-  position: absolute;
-  bottom: -100px;
-  width: 40px;
-  height: 40px;
-  background: #f1f1f1;
-  border-radius: 50%;
-  opacity: 0.5;
-  animation: rise 10s infinite ease-in;
-}
-.bubble:nth-child(1) {
-  width: 40px;
-  height: 40px;
-  left: 10%;
-  animation-duration: 8s;
-}
-.bubble:nth-child(2) {
-  width: 20px;
-  height: 20px;
-  left: 20%;
-  animation-duration: 5s;
-  animation-delay: 1s;
-}
-.bubble:nth-child(3) {
-  width: 50px;
-  height: 50px;
-  left: 35%;
-  animation-duration: 7s;
-  animation-delay: 2s;
-}
-.bubble:nth-child(4) {
-  width: 80px;
-  height: 80px;
-  left: 50%;
-  animation-duration: 11s;
-  animation-delay: 0s;
-}
-.bubble:nth-child(5) {
-  width: 35px;
-  height: 35px;
-  left: 55%;
-  animation-duration: 6s;
-  animation-delay: 1s;
-}
-.bubble:nth-child(6) {
-  width: 45px;
-  height: 45px;
-  left: 65%;
-  animation-duration: 8s;
-  animation-delay: 3s;
-}
-.bubble:nth-child(7) {
-  width: 90px;
-  height: 90px;
-  left: 70%;
-  animation-duration: 12s;
-  animation-delay: 2s;
-}
-.bubble:nth-child(8) {
-  width: 25px;
-  height: 25px;
-  left: 80%;
-  animation-duration: 6s;
-  animation-delay: 2s;
-}
-.bubble:nth-child(9) {
-  width: 15px;
-  height: 15px;
-  left: 70%;
-  animation-duration: 5s;
-  animation-delay: 1s;
-}
-.bubble:nth-child(10) {
-  width: 90px;
-  height: 90px;
-  left: 25%;
-  animation-duration: 10s;
-  animation-delay: 4s;
-}
-@keyframes rise {
-  0% {
-    bottom: -100px;
-    transform: translateX(0);
-  }
-  50% {
-    transform: translate(100px);
-  }
-  100% {
-    bottom: 1080px;
-    transform: translateX(-200px);
   }
 }
